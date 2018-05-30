@@ -1,0 +1,16 @@
+*.iml
+*.iws
+.DS_Store
+.classpath
+.grunt
+.idea
+.metadata
+.project
+.settings
+bin
+bower_components
+build
+ehcache.disk.store.dir
+node_modules
+npm-debug.log
+target
