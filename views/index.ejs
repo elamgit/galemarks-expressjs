@@ -50,7 +50,9 @@
     </div>
 </header>
 <main role="main">
-    <div id="tree">
+    <div class="container">
+        <div id="tree">
+        </div>
     </div>
 </main>
 
@@ -95,7 +97,23 @@
                 ]
             },
             {
-                text: "Parent 2"
+                text: "Parent 2",
+                nodes: [
+                    {
+                        text: "Child 21",
+                        nodes: [
+                            {
+                                text: "Grandchild 21"
+                            },
+                            {
+                                text: "Grandchild 22"
+                            }
+                        ]
+                    },
+                    {
+                        text: "Child 22"
+                    }
+                ]
             },
             {
                 text: "Parent 3"
@@ -115,7 +133,8 @@
         $('#tree').treeview({
             data: getTree(),
             collapseIcon: 'fas fa-minus-square',
-            expandIcon: 'fas fa-plus-square'
+            expandIcon: 'fas fa-plus-square',
+            levels: 0
 
         });
     });
