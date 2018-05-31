@@ -7,7 +7,6 @@
 .metadata
 .project
 .settings
-bin
 bower_components
 build
 ehcache.disk.store.dir
